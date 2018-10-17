@@ -12,7 +12,7 @@ namespace FishGameKataTests
         {
             GameFish game = new GameFish();
             string fishs = "";
-            Assert.AreEqual(1, game.fish(fishs));
+            Assert.AreEqual(1, game.Fish(fishs));
         }
 
         [TestMethod]
@@ -20,15 +20,15 @@ namespace FishGameKataTests
         {
             GameFish game = new GameFish();
             string fishs = "0";
-            Assert.AreEqual(1, game.fish(fishs));
+            Assert.AreEqual(1, game.Fish(fishs));
         }
 
         [TestMethod]
         public void FishTest3()
         {
             GameFish game = new GameFish();
-            string fishs = "6";
-            Assert.AreEqual(1, game.fish(fishs));
+            string fishs = "5";
+            Assert.AreEqual(1, game.Fish(fishs));
         }
 
         [TestMethod]
@@ -36,7 +36,7 @@ namespace FishGameKataTests
         {
             GameFish game = new GameFish();
             string fishs = "1111";
-            Assert.AreEqual(2, game.fish(fishs));
+            Assert.AreEqual(2, game.Fish(fishs));
         }
 
         [TestMethod]
@@ -44,7 +44,7 @@ namespace FishGameKataTests
         {
             GameFish game = new GameFish();
             string fishs = "11112222";
-            Assert.AreEqual(3, game.fish(fishs));
+            Assert.AreEqual(3, game.Fish(fishs));
         }
 
         [TestMethod]
@@ -52,7 +52,7 @@ namespace FishGameKataTests
         {
             GameFish game = new GameFish();
             string fishs = "111122223333";
-            Assert.AreEqual(4, game.fish(fishs));
+            Assert.AreEqual(4, game.Fish(fishs));
         }
 
         [TestMethod]
@@ -60,7 +60,7 @@ namespace FishGameKataTests
         {
             GameFish game = new GameFish();
             string fishs = "111111111111";
-            Assert.AreEqual(3, game.fish(fishs));
+            Assert.AreEqual(3, game.Fish(fishs));
         }
 
         [TestMethod]
@@ -68,7 +68,7 @@ namespace FishGameKataTests
         {
             GameFish game = new GameFish();
             string fishs = "111111111111111111112222222222";
-            Assert.AreEqual(5, game.fish(fishs));
+            Assert.AreEqual(5, game.Fish(fishs));
         }
 
         [TestMethod]
@@ -76,7 +76,7 @@ namespace FishGameKataTests
         {
             GameFish game = new GameFish();
             string fishs = "151128241212192113722321331";
-            Assert.AreEqual(5, game.fish(fishs));
+            Assert.AreEqual(5, game.Fish(fishs));
         }
     }
 }
